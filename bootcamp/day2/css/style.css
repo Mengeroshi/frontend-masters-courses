@@ -28,6 +28,10 @@ blockquote{
     text-align: center;
     color:#A6035D;
 }
+blockquote p{
+    text-align: center;
+}
+
 cite{
     font-size: 2rem;
 }
