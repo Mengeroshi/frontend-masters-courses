@@ -11,16 +11,19 @@ h1{
     text-align: center;
     font-size: 3.5rem;
     border: .5rem solid #0455BF ;
+    padding: 1rem;
 }
 
 blockquote{
     background-color: #0455BF;
+    padding: 1rem;
 }
 
 blockquote p{
     color: white;
     font-size: 1.5rem;
     text-align: center;
+    padding: .2rem;
 }
 
 blockquote cite{
@@ -32,13 +35,19 @@ blockquote cite{
 ol{
     color: white;
     background-color: #032059 ;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+li{
+    padding:.2rem;
+    text-align: left;
 }
 
 ol li:hover{
     color: #032059;
     background-color: white;
     marker: white;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 ol ::marker{
@@ -68,4 +77,17 @@ a:visited{
 a:hover{
     color: white;
     background-color: #032059;
+}
+
+blockquote em{
+    color: white;
+}
+
+blockquote p{
+    margin: 0;
+}
+
+body > p{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
