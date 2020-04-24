@@ -1,0 +1,20 @@
+<style>
+  .color-box {
+    background-color: limegreen;
+    width: 100px;
+    height: 100px;
+  }
+</style>
+
+<div class="color-box"></div>
+<input class="color-input" placeholder="Type a color here!" />
+
+<script>
+  const input = document.querySelector('.color-input');
+  const paragraph = document.querySelector('.color-box');
+
+  input.addEventListener("change", function() {
+    paragraph.style.backgroundColor  = input.value;
+    console.log("doassd");
+  });
+</script>
