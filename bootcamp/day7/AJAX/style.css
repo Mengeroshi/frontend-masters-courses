@@ -17,25 +17,43 @@ html {
   }
 nav{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     height: 20vh;
     border: 3px solid blue;
     margin-bottom: 2rem;
 }
 nav h1{
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 nav select{
     height: 3rem;
-    width: 6rem;
+    width: 10rem;
 }
 .doggos{
     display: flex;
     justify-content: center;
-    height: 70vh;
+    align-items: center;
+    margin-top: 30px;
+    height: 50%;
 }
 img{
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 10px;
+    display: none;
+}
+@keyframes spin{
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.spiner{
+    font-size: 50px;
+    text-align: center;
+    animation: 1s spin linear infinite;
+    display: none;
+}
+
+.show{
+    display: block;
 }

@@ -4,6 +4,7 @@ const breedsSelect = document.querySelector('.breeds');
 let BREEDS_IMAGES_URL;
 const imgDog = document.querySelector('.img-dog');
 const doggos = document.querySelector('.doggos');
+const spiner =document.querySelector('.spiner');
 
 
 /*function addDoggo(){
@@ -42,7 +43,7 @@ const BREEDS_URL =
                 });
             })
                 .then(()=>{ document.getElementsByTagName('OPTION')[25].selected = true;
-                })
+                });
 
 breedsSelect.addEventListener('change', (e)=>{
     searchDog = e.target.value;
@@ -54,6 +55,8 @@ breedsSelect.addEventListener('change', (e)=>{
 
 
 function addDoggo(){
+    spiner.classList.add("show");
+    imgDog.classList.remove('show');
     fetch(BREEDS_IMAGES_URL)
     .then(function(response){
         return response.json()
@@ -64,3 +67,8 @@ function addDoggo(){
     });
 
 }
+
+imgDog.addEventListener('load', ()=>{
+    spiner.classList.remove("show");
+    imgDog.classList.add("show");
+})
