@@ -40,6 +40,7 @@ body{
 }
 
 .hole-container{
+    display: flex;
     width: 25%;
     justify-content: center;
     align-items: center;
@@ -54,6 +55,20 @@ body{
     cursor: url(./mole-game/cursor-worm.png), default;
 }
 
-.gone{
+.gone, .hide{
     display: none;
+}
+
+.worm{
+    width: 1660px;
+
+}
+.worm-container{
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+
+}
+
+.worm-box{
+    
 }
